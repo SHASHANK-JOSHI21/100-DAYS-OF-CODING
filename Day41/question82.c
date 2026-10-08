@@ -10,17 +10,16 @@ i
 
 */
 #include <stdio.h>
+#include <string.h>
 
-int main()
-{
+int main() {
     char a[100];
     int i;
 
     printf("Enter string: ");
-    scanf("%s", a);
+    scanf("%99s", a);
 
-    for(i = 0; a[i] != '\0'; i++)
-    {
+    for(i = 0; i < strlen(a); i++) {
         printf("%c\n", a[i]);
     }
 
